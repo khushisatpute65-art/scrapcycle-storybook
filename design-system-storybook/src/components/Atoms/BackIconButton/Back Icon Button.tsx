@@ -1,5 +1,5 @@
 import React from 'react';
-import './Back Icon Button.css';
+import './BackIconButton.css';
 
 export interface BackIconButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   styleVariant?: 'Outline' | 'Primary' | 'Secondary';
