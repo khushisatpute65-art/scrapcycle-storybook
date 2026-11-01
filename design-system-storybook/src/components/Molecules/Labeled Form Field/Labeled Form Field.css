@@ -1,0 +1,45 @@
+/* Labeled Form Field.css */
+@import "../../../styles/figma-tokens.css";
+.scrapcycle-labeled-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--uedp-gap-2, 8px);
+  width: 100%;
+  max-width: 315px;
+  box-sizing: border-box;
+}
+
+.scrapcycle-labeled-field__label {
+  font-family: var(--uedp-font-family-body, 'Inter', sans-serif);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--uedp-slate-800, #1E293B);
+}
+
+.scrapcycle-labeled-field__control {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.scrapcycle-labeled-field__chevron {
+  position: absolute;
+  right: 14px;
+  color: var(--uedp-slate-500, #64748B);
+  pointer-events: none;
+}
+
+.scrapcycle-labeled-field__helper {
+  font-family: var(--uedp-font-family-body, 'Inter', sans-serif);
+  font-size: 12px;
+  color: var(--uedp-slate-500, #64748B);
+}
+
+.scrapcycle-labeled-field__helper--error {
+  color: var(--uedp-red-600, #DC2626);
+  font-weight: 500;
+}
+
+.scrapcycle-labeled-field__helper--success {
+  color: var(--uedp-emerald-700, #047857);
+}

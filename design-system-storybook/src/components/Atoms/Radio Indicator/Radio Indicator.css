@@ -1,0 +1,40 @@
+/* Radio Indicator.css */
+@import "../../../styles/figma-tokens.css";
+.scrapcycle-radio-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  width: 22px;
+  height: 22px;
+}
+
+.scrapcycle-radio-indicator__ring {
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid var(--uedp-slate-400, #94A3B8);
+  background-color: var(--uedp-base-white, #FFFFFF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.scrapcycle-radio-indicator--selected .scrapcycle-radio-indicator__ring {
+  border-color: var(--uedp-emerald-600, #0D9488);
+}
+
+.scrapcycle-radio-indicator__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--uedp-emerald-600, #0D9488);
+}
+
+.scrapcycle-radio-indicator--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

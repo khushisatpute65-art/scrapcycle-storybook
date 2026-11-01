@@ -1,0 +1,51 @@
+/* Input Surface.css */
+@import "../../../styles/figma-tokens.css";
+.scrapcycle-input-surface {
+  width: 100%;
+  height: 48px;
+  box-sizing: border-box;
+  padding: 0 16px;
+  font-family: var(--uedp-font-family-body, 'Inter', sans-serif);
+  font-size: 15px;
+  border-radius: var(--uedp-rounded-lg, 10px);
+  background-color: var(--uedp-slate-50, #F8FAFC);
+  border: 1.5px solid var(--uedp-slate-200, #E2E8F0);
+  color: var(--uedp-slate-900, #0F172A);
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.scrapcycle-input-surface::placeholder {
+  color: var(--uedp-slate-400, #94A3B8);
+}
+
+.scrapcycle-input-surface:focus,
+.scrapcycle-input-surface--focus {
+  background-color: var(--uedp-base-white, #FFFFFF);
+  border-color: var(--uedp-emerald-700, #074E4A);
+  box-shadow: 0 0 0 3px rgba(7, 78, 74, 0.15);
+}
+
+.scrapcycle-input-surface--filled {
+  background-color: var(--uedp-base-white, #FFFFFF);
+  border-color: var(--uedp-slate-300, #CBD5E1);
+}
+
+.scrapcycle-input-surface--error {
+  background-color: var(--uedp-red-50, #FEF2F2);
+  border-color: var(--uedp-red-500, #EF4444);
+  color: var(--uedp-red-900, #7F1D1D);
+}
+
+.scrapcycle-input-surface--success {
+  background-color: var(--uedp-emerald-50, #ECFDF5);
+  border-color: var(--uedp-emerald-500, #10B981);
+}
+
+.scrapcycle-input-surface:disabled,
+.scrapcycle-input-surface--disabled {
+  background-color: var(--uedp-slate-100, #F1F5F9);
+  color: var(--uedp-slate-400, #94A3B8);
+  cursor: not-allowed;
+  border-color: var(--uedp-slate-200, #E2E8F0);
+}

@@ -1,0 +1,71 @@
+/* Back Icon Button.css */
+@import "../../../styles/figma-tokens.css";
+.scrapcycle-back-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Shapes */
+.scrapcycle-back-icon-btn--rounded {
+  border-radius: var(--uedp-rounded-lg, 8px);
+}
+.scrapcycle-back-icon-btn--square {
+  border-radius: 0px;
+}
+.scrapcycle-back-icon-btn--circular {
+  border-radius: var(--uedp-rounded-full, 9999px);
+}
+
+/* Sizes */
+.scrapcycle-back-icon-btn--small {
+  width: 36px;
+  height: 36px;
+}
+.scrapcycle-back-icon-btn--medium {
+  width: 44px;
+  height: 44px;
+}
+.scrapcycle-back-icon-btn--large {
+  width: 52px;
+  height: 52px;
+}
+
+/* Styles */
+.scrapcycle-back-icon-btn--outline {
+  background-color: var(--uedp-base-white, #FFFFFF);
+  border-color: var(--uedp-emerald-500, #379F6E);
+  color: var(--uedp-emerald-800, #074E4A);
+}
+.scrapcycle-back-icon-btn--outline:hover,
+.scrapcycle-back-icon-btn--outline.scrapcycle-back-icon-btn--hover {
+  background-color: var(--uedp-emerald-50, #ECFDF5);
+}
+
+.scrapcycle-back-icon-btn--primary {
+  background-color: var(--uedp-orange-500, #F97316);
+  border-color: var(--uedp-orange-500, #F97316);
+  color: var(--uedp-base-white, #FFFFFF);
+}
+.scrapcycle-back-icon-btn--primary:hover,
+.scrapcycle-back-icon-btn--primary.scrapcycle-back-icon-btn--hover {
+  background-color: var(--uedp-orange-600, #EA580C);
+}
+
+.scrapcycle-back-icon-btn--secondary {
+  background-color: var(--uedp-emerald-800, #074E4A);
+  border-color: var(--uedp-emerald-800, #074E4A);
+  color: var(--uedp-base-white, #FFFFFF);
+}
+
+.scrapcycle-back-icon-btn:disabled,
+.scrapcycle-back-icon-btn--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}

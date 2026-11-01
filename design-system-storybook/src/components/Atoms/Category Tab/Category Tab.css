@@ -1,0 +1,40 @@
+/* Category Tab.css */
+@import "../../../styles/figma-tokens.css";
+.scrapcycle-category-tab {
+  height: 38px;
+  padding: 8px 18px;
+  border-radius: var(--uedp-rounded-lg, 8px);
+  font-family: var(--uedp-font-family-body, 'Inter', sans-serif);
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrapcycle-category-tab--selected {
+  background-color: var(--uedp-emerald-800, #074E4A);
+  color: var(--uedp-base-white, #FFFFFF);
+  border-color: var(--uedp-emerald-500, #379F6E);
+}
+
+.scrapcycle-category-tab--unselected {
+  background-color: var(--uedp-base-white, #FFFFFF);
+  color: var(--uedp-slate-700, #334155);
+  border-color: var(--uedp-slate-200, #E2E8F0);
+}
+
+.scrapcycle-category-tab--unselected:hover {
+  background-color: var(--uedp-slate-50, #F8FAFC);
+  border-color: var(--uedp-slate-300, #CBD5E1);
+}
+
+.scrapcycle-category-tab--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}

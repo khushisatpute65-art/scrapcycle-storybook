@@ -1,0 +1,62 @@
+/* Search Bar.css */
+@import "../../../styles/figma-tokens.css";
+.scrapcycle-search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 352px;
+  height: 48px;
+  box-sizing: border-box;
+  padding: 0 16px 0 20px;
+  gap: 12px;
+  border-radius: var(--uedp-rounded-xl, 12px);
+  background-color: var(--uedp-slate-50, #F8FAFC);
+  border: 1.5px solid var(--uedp-slate-200, #E2E8F0);
+  transition: all 0.2s ease-in-out;
+}
+
+.scrapcycle-search-bar__icon {
+  color: var(--uedp-emerald-800, #074E4A);
+  display: flex;
+  align-items: center;
+}
+
+.scrapcycle-search-bar__input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: var(--uedp-font-family-body, 'Inter', sans-serif);
+  font-size: 15px;
+  color: var(--uedp-slate-900, #0F172A);
+}
+
+.scrapcycle-search-bar__input::placeholder {
+  color: var(--uedp-slate-400, #94A3B8);
+}
+
+.scrapcycle-search-bar__clear {
+  border: none;
+  background: transparent;
+  color: var(--uedp-slate-400, #94A3B8);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+.scrapcycle-search-bar__clear:hover {
+  color: var(--uedp-slate-700, #334155);
+}
+
+.scrapcycle-search-bar:focus-within,
+.scrapcycle-search-bar--focus {
+  background-color: var(--uedp-base-white, #FFFFFF);
+  border-color: var(--uedp-emerald-600, #0F766E);
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.15);
+}
+
+.scrapcycle-search-bar--disabled {
+  opacity: 0.6;
+  background-color: var(--uedp-slate-100, #F1F5F9);
+  cursor: not-allowed;
+}

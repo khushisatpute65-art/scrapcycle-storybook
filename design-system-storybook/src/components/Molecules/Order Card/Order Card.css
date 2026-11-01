@@ -1,0 +1,63 @@
+/* Order Card.css */
+@import "../../../styles/figma-tokens.css";
+.scrapcycle-order-card {
+  width: 100%;
+  max-width: 352px;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: var(--uedp-rounded-lg, 8px);
+  background-color: var(--uedp-base-white, #FFFFFF);
+  border: 1.5px solid var(--uedp-orange-500, #F97316);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: var(--uedp-font-family-body, 'Inter', sans-serif);
+}
+
+.scrapcycle-order-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.scrapcycle-order-card__id {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--uedp-slate-900, #0F172A);
+}
+
+.scrapcycle-order-card__items {
+  font-size: 13px;
+  color: var(--uedp-slate-600, #475569);
+  margin-top: 2px;
+}
+
+.scrapcycle-order-card__middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  padding-top: 6px;
+  border-top: 1px dashed var(--uedp-slate-200, #E2E8F0);
+}
+
+.scrapcycle-order-card__amount {
+  font-weight: 700;
+  color: var(--uedp-emerald-700, #0F766E);
+}
+
+.scrapcycle-order-card__schedule {
+  color: var(--uedp-slate-500, #64748B);
+}
+
+.scrapcycle-order-card__driver {
+  font-size: 12px;
+  color: var(--uedp-slate-500, #64748B);
+  line-height: 18px;
+}
+
+.scrapcycle-order-card__action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4px;
+}

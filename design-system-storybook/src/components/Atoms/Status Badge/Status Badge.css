@@ -1,0 +1,54 @@
+/* Status Badge.css */
+@import "../../../styles/figma-tokens.css";
+.scrapcycle-status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--uedp-font-family-body, 'Inter', sans-serif);
+  font-weight: 600;
+  border-radius: var(--uedp-rounded-sm, 5px);
+  text-transform: capitalize;
+  box-sizing: border-box;
+}
+
+/* Sizes */
+.scrapcycle-status-badge--small {
+  padding: 2px 8px;
+  font-size: 12px;
+  line-height: 16px;
+}
+.scrapcycle-status-badge--medium {
+  padding: 4px 12px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* In Route */
+.scrapcycle-status-badge--in-route.scrapcycle-status-badge--soft {
+  background-color: #E7FBD9;
+  color: var(--uedp-emerald-800, #074E4A);
+}
+.scrapcycle-status-badge--in-route.scrapcycle-status-badge--filled {
+  background-color: var(--uedp-orange-500, #F97316);
+  color: var(--uedp-base-white, #FFFFFF);
+}
+
+/* Completed */
+.scrapcycle-status-badge--completed.scrapcycle-status-badge--soft {
+  background-color: var(--uedp-emerald-100, #D1FAE5);
+  color: var(--uedp-emerald-800, #065F46);
+}
+.scrapcycle-status-badge--completed.scrapcycle-status-badge--filled {
+  background-color: var(--uedp-emerald-600, #059669);
+  color: var(--uedp-base-white, #FFFFFF);
+}
+
+/* Pending */
+.scrapcycle-status-badge--pending.scrapcycle-status-badge--soft {
+  background-color: var(--uedp-amber-100, #FEF3C7);
+  color: var(--uedp-amber-800, #92400E);
+}
+.scrapcycle-status-badge--pending.scrapcycle-status-badge--filled {
+  background-color: var(--uedp-amber-500, #F59E0B);
+  color: var(--uedp-base-white, #FFFFFF);
+}

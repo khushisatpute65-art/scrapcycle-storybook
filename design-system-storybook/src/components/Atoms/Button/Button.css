@@ -1,0 +1,107 @@
+/* Button.css - ScrapCycle Design System */
+@import "../../../styles/figma-tokens.css";
+.scrapcycle-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--uedp-gap-2, 8px);
+  font-family: var(--uedp-font-family-body, 'Inter', -apple-system, BlinkMacSystemFont, sans-serif);
+  font-weight: 700;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  user-select: none;
+}
+
+/* Shapes */
+.scrapcycle-button--shape-standard {
+  border-radius: var(--uedp-rounded-xl, 12px);
+}
+.scrapcycle-button--shape-rounded {
+  border-radius: var(--uedp-rounded-full, 9999px);
+}
+
+/* Sizes */
+.scrapcycle-button--size-small {
+  height: 38px;
+  padding: 8px 24px;
+  font-size: 14px;
+}
+.scrapcycle-button--size-medium {
+  height: 48px;
+  padding: 12px 32px;
+  font-size: 16px;
+}
+.scrapcycle-button--size-large {
+  height: 58px;
+  padding: 16px 48px;
+  font-size: 21px;
+}
+
+/* Variants */
+/* Primary Filled */
+.scrapcycle-button--primary-filled {
+  background-color: var(--uedp-orange-500, #F97316);
+  color: var(--uedp-base-white, #FFFFFF);
+  border-color: var(--uedp-orange-500, #F97316);
+}
+.scrapcycle-button--primary-filled:hover,
+.scrapcycle-button--primary-filled.scrapcycle-button--state-hover {
+  background-color: var(--uedp-orange-600, #EA580C);
+  border-color: var(--uedp-orange-600, #EA580C);
+}
+.scrapcycle-button--primary-filled:active,
+.scrapcycle-button--primary-filled.scrapcycle-button--state-pressed-active {
+  background-color: var(--uedp-orange-300, #FDBA74);
+  border-color: var(--uedp-orange-300, #FDBA74);
+}
+.scrapcycle-button--primary-filled:focus-visible,
+.scrapcycle-button--primary-filled.scrapcycle-button--state-focus {
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.4);
+}
+
+/* Secondary Filled */
+.scrapcycle-button--secondary-filled {
+  background-color: var(--uedp-emerald-700, #0F766E);
+  color: var(--uedp-base-white, #FFFFFF);
+  border-color: var(--uedp-emerald-700, #0F766E);
+}
+.scrapcycle-button--secondary-filled:hover,
+.scrapcycle-button--secondary-filled.scrapcycle-button--state-hover {
+  background-color: var(--uedp-emerald-800, #115E59);
+}
+
+/* Outline */
+.scrapcycle-button--outline {
+  background-color: transparent;
+  color: var(--uedp-orange-500, #F97316);
+  border-color: var(--uedp-orange-500, #F97316);
+}
+.scrapcycle-button--outline:hover,
+.scrapcycle-button--outline.scrapcycle-button--state-hover {
+  background-color: var(--uedp-orange-50, #FFF7ED);
+}
+
+/* Text/Ghost */
+.scrapcycle-button--text-ghost {
+  background-color: transparent;
+  color: var(--uedp-slate-700, #334155);
+  border-color: transparent;
+}
+.scrapcycle-button--text-ghost:hover,
+.scrapcycle-button--text-ghost.scrapcycle-button--state-hover {
+  background-color: var(--uedp-slate-100, #F1F5F9);
+}
+
+/* Disabled State */
+.scrapcycle-button:disabled,
+.scrapcycle-button--state-disabled {
+  background-color: var(--uedp-slate-300, #CBD5E1) !important;
+  color: var(--uedp-slate-400, #94A3B8) !important;
+  border-color: var(--uedp-slate-300, #CBD5E1) !important;
+  cursor: not-allowed !important;
+  pointer-events: none;
+}

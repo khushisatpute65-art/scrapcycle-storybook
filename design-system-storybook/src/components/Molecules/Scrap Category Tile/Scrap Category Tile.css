@@ -1,0 +1,45 @@
+/* Scrap Category Tile.css */
+@import "../../../styles/figma-tokens.css";
+.scrapcycle-category-tile {
+  width: 107px;
+  height: 115px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: var(--uedp-rounded-lg, 8px);
+  background-color: var(--uedp-base-white, #FFFFFF);
+  border: 1.5px solid var(--uedp-slate-200, #E2E8F0);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.scrapcycle-category-tile:hover {
+  border-color: var(--uedp-slate-400, #94A3B8);
+  transform: translateY(-2px);
+}
+
+.scrapcycle-category-tile--selected {
+  border-color: var(--uedp-emerald-600, #0D9488);
+  background-color: var(--uedp-emerald-50, #ECFDF5);
+}
+
+.scrapcycle-category-tile__icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--uedp-rounded-md, 6px);
+  background-color: #F1F8F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.scrapcycle-category-tile__title {
+  font-family: var(--uedp-font-family-body, 'Inter', sans-serif);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--uedp-slate-800, #1E293B);
+}

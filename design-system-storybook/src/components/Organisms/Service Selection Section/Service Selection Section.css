@@ -1,0 +1,23 @@
+/* Service Selection Section.css */
+@import "../../../styles/figma-tokens.css";
+.scrapcycle-service-selection {
+  width: 100%;
+  max-width: 353px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: var(--uedp-font-family-body, 'Inter', sans-serif);
+}
+
+.scrapcycle-service-selection__heading {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--uedp-slate-900, #0F172A);
+}
+
+.scrapcycle-service-selection__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

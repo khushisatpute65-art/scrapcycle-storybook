@@ -1,0 +1,54 @@
+/* OTP Verification Group.css */
+@import "../../../styles/figma-tokens.css";
+.scrapcycle-otp-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 315px;
+  box-sizing: border-box;
+  gap: var(--uedp-gap-4, 16px);
+  font-family: var(--uedp-font-family-body, 'Inter', sans-serif);
+}
+
+.scrapcycle-otp-group__heading {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--uedp-slate-900, #0F172A);
+}
+
+.scrapcycle-otp-group__instructions {
+  margin: 0;
+  font-size: 14px;
+  color: var(--uedp-slate-600, #475569);
+  line-height: 20px;
+}
+
+.scrapcycle-otp-group__cells {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.scrapcycle-otp-group__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.scrapcycle-otp-group__countdown {
+  font-weight: 600;
+  color: var(--uedp-orange-500, #F97316);
+}
+
+.scrapcycle-otp-group__resend {
+  border: none;
+  background: transparent;
+  color: var(--uedp-emerald-700, #0F766E);
+  font-weight: 600;
+  cursor: pointer;
+}
+.scrapcycle-otp-group__resend:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,38 @@
+/* Screen Header.css */
+@import "../../../styles/figma-tokens.css";
+.scrapcycle-screen-header {
+  width: 100%;
+  max-width: 393px;
+  box-sizing: border-box;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--uedp-base-white, #FFFFFF);
+  border-bottom: 1px solid var(--uedp-slate-200, #E2E8F0);
+  font-family: var(--uedp-font-family-body, 'Inter', sans-serif);
+}
+
+.scrapcycle-screen-header__left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.scrapcycle-screen-header__titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.scrapcycle-screen-header__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--uedp-slate-900, #0F172A);
+}
+
+.scrapcycle-screen-header__subtitle {
+  margin: 2px 0 0 0;
+  font-size: 12px;
+  color: var(--uedp-slate-500, #64748B);
+}

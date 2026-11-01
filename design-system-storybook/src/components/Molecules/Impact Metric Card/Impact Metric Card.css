@@ -1,0 +1,43 @@
+/* Impact Metric Card.css */
+@import "../../../styles/figma-tokens.css";
+.scrapcycle-metric-card {
+  width: 168px;
+  height: 116px;
+  box-sizing: border-box;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: var(--uedp-rounded-xl, 14px);
+  background-color: #E7FBD9;
+  border: 1px solid rgba(7, 78, 74, 0.08);
+  font-family: var(--uedp-font-family-body, 'Inter', sans-serif);
+}
+
+.scrapcycle-metric-card__header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.scrapcycle-metric-card__icon {
+  font-size: 18px;
+}
+
+.scrapcycle-metric-card__heading {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--uedp-emerald-800, #074E4A);
+}
+
+.scrapcycle-metric-card__value {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--uedp-slate-900, #0F172A);
+  letter-spacing: -0.5px;
+}
+
+.scrapcycle-metric-card__desc {
+  font-size: 11px;
+  color: var(--uedp-slate-600, #475569);
+}
