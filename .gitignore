@@ -4,3 +4,8 @@ dist/
 .DS_Store
 *.log
 .vercel
+figma_full.json
+fetch_figma.ps1
+extraction.js
+extract_atoms.js
+extract_molecules.js
