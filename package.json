@@ -1,0 +1,10 @@
+{
+  "name": "scrapcycle-storybook-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix design-system-storybook install",
+    "build": "npm --prefix design-system-storybook run build-storybook",
+    "storybook": "npm --prefix design-system-storybook run dev"
+  }
+}
